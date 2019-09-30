@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Inventory App</string>
+    <string name="empty_view_title_text">Whoops! The inventory is empty …</string>
+    <string name="empty_view_subtitle_text">Get started by adding a product</string>
+
+    <!-- Label for overflow menu option that inserts data into the app  -->
+    <string name="action_insert_dummy_data">Insert Dummy Data</string>
+    <string name="action_delete_all_entries">Delete all</string>
+    <string name="action_see_product_details">See Product Details</string>
+    <string name="action_edit_product_details">Edit Product Details</string>
+    <string name="editor_activity_title_new_product">New Product</string>
+    <string name="delete_all">Delete All Product</string>
+    <!-- Label for editor menu option to save current book  -->
+    <string name="save_action">Save</string>
+
+    <!-- Label for editor overflow menu option that deletes the current book -->
+    <string name="delete_action">Delete Current Book</string>
+
+    <!-- Label for overview category of attributes in the editor  -->
+    <string name="category_overview">Product Overview</string>
+    <string name="hint_product_name">Product Name</string>
+    <string name="hint_product_price">Price</string>
+    <string name="unit_price">$</string>
+    <string name="category_quantity">Quantity</string>
+    <string name="category_supplier">Supplier Info</string>
+    <string name="hint_quantity">5</string>
+    <string name="hint_supplier_name">Name</string>
+    <string name="hint_supplier_phone_number">Phone Number</string>
+
+    <!-- EditorActivity.java  -->
+    <string name="editor_new">Add Inventory</string>
+    <string name="editor_edit">Edit Product Details</string>
+    <string name="editor_imputeError">Invalid impute</string>
+
+
+    <string name="editor_saveSuccessful">Product saved</string>
+    <string name="editor_saveError">Error with saving product</string>
+    <string name="editor_updateSuccessful">Product updated</string>
+    <string name="editor_updateError">Error with updating product</string>
+    <string name="discard">Discard</string>
+    <string name="editor_unsavedDialogMsg">Discard your changes and quit editing?</string>
+    <string name="editor_keepEditing">Keep Editing</string>
+    <string name="editor_deleteSuccessful">Product Deleted</string>
+    <string name="editor_deleteError">Error with deleting product</string>
+    <string name="editor_deleteDialogMsg">Delete this product?</string>
+    <string name="editor_delete">Delete</string>
+    <string name="editor_cancel">Cancel</string>
+
+    <!-- CatalogActivity.java  -->
+    <string name="catalog_deleteDialogMsg">Delete all product?</string>
+    <string name="catalog_deleteError">Error with deleting products</string>
+    <string name="catalog_deleteSuccessful">\tproduct deleted</string>
+    <string name="catalog_saleSuccessful">Product sold</string>
+    <string name="catalog_saleError">Error with sailing the product</string>
+    <string name="catalog_saleZeroMsg">Sorry, currently there\'s no more product.</string>
+
+    <!-- InventoryProvider.java  -->
+    <string name="inventory_insertUriError">Insertion is not supported for </string>
+    <string name="inventory_insertNameError">Name required!</string>
+    <string name="inventory_insertPriceError">Price required!</string>
+    <string name="inventory_insertSupplierNameError">Supplier name required!</string>
+
+
+</resources>

@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorToolbar</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CategoryTextStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:padding">@dimen/margin_medium</item>
+        <item name="android:textSize">@dimen/text_large</item>
+    </style>
+
+    <style name="ItemTextStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:padding">@dimen/margin_small</item>
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+
+    <style name="ItemTextStyleName">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">@dimen/margin_small</item>
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+
+    <style name="ImageButton">
+        <item name="android:layout_width">@dimen/margin_large</item>
+        <item name="android:layout_height">@dimen/margin_large</item>
+        <item name="android:background">@drawable/button_shape</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_marginRight">@dimen/margin_small</item>
+    </style>
+
+    <style name="TextFieldStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+    </style>
+
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_small">
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/item_list_name"
+        style="@style/CategoryTextStyle"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/hint_product_name" />
+
+    <ImageView
+        android:id="@+id/price_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_list_price"
+        android:layout_margin="@dimen/margin_small"
+        android:layout_toLeftOf="@id/item_list_quantity"
+        android:layout_toStartOf="@id/item_list_quantity"
+        android:scaleType="centerCrop"
+        android:src="@drawable/price"
+        app:layout_constraintBottom_toBottomOf="@id/item_list_price"
+        app:layout_constraintEnd_toStartOf="@+id/item_list_price"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_list_name"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/item_list_price"
+        style="@style/ItemTextStyle"
+        android:layout_below="@id/item_list_name"
+        android:layout_margin="@dimen/margin_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/price_image"
+        app:layout_constraintTop_toBottomOf="@+id/item_list_name"
+        tools:text="@string/hint_product_price" />
+
+    <ImageView
+        android:id="@+id/quantity_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_list_price"
+        android:layout_marginLeft="@dimen/margin_extra_large"
+        android:layout_marginStart="@dimen/margin_extra_large"
+        android:layout_marginTop="@dimen/margin_small"
+        android:src="@drawable/quantity"
+        app:layout_constraintStart_toEndOf="@+id/item_list_price"
+        app:layout_constraintTop_toBottomOf="@+id/item_list_name"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/item_list_quantity"
+        style="@style/ItemTextStyle"
+        android:layout_below="@+id/item_list_price"
+        android:layout_margin="@dimen/margin_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/quantity_image"
+        tools:text="@string/hint_quantity" />
+
+    <ImageButton
+        android:id="@+id/saleButton"
+        style="@style/ImageButton"
+        android:layout_margin="@dimen/margin_small"
+        android:onClick="saleOneProduct"
+        android:src="@drawable/shop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>
